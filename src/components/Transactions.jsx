@@ -17,7 +17,7 @@ const TransactionCard=({item})=>{
                <p className="m-0">From: {shortenAddress(item.addressFrom)}</p>
                <p className="m-0">To: {shortenAddress(item.addressTo)}</p>
                <p className="m-0">Amount: {item.amount} ETH</p> 
-               {item.message &&  <p className="m-0">{item.message}</p>}
+               {item.message &&  (<p className="m-0">{item.message}</p>)}
            </Card.Text>
             <Card.Img src={item.url || gifUrl} alt="gif" style={{ minWidth: '13rem', height: '12rem',objectFit: 'cover' }}/>
             <Card.ImgOverlay>

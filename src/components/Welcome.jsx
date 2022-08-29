@@ -27,7 +27,7 @@ const Welcome=()=>{
               <h1 className="text1">
                 Send Crypto
                 <br/>
-                accoss the world
+                across the world
               </h1>
               <p className="text">
                   Explore the crypto world. Buy and Sell 
@@ -60,7 +60,7 @@ const Welcome=()=>{
                       <AiOutlineExclamationCircle/>
                     </Card.Title>
                     <Card.Text className="fw-bold text1">
-                        <small>{shortenAddress(currentAccount)}</small>
+                        <small>{currentAccount && shortenAddress(currentAccount)}</small>
                         <p>Ethereum</p> 
                     </Card.Text>
                   </Card.Body>
